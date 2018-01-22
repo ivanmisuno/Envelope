@@ -1,0 +1,15 @@
+#!/bin/sh
+
+focused_tests=$(git diff --cached -- *.swift | grep -E '^\+\s*f(describe|context|it|itBehavesLike)\s*\(' | wc -l)
+if [ "$focused_tests" -gt 0 ] ; then
+    echo "  Error: Attempt to commit a focused test."
+    echo "         Unfocus test cases before committing (replace fdescribe with describe):"
+    exit 1
+fi
+
+quickspec=$(git diff --cached -- *.swift ":(exclude)*/TestSpec.swift" ":(exclude)*/SnapshotTestSpec.swift" | grep -E '\bQuickSpec\b' | wc -l)
+if [ "$quickspec" -gt 0 ] ; then
+    echo "  Error: Usage of QuickSpec class is prohibited."
+    echo "         Please derive your test case class from TestSpec/SnapshotTestSpec classes instead."
+    exit 1
+fi

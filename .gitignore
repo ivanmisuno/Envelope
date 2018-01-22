@@ -1,0 +1,14 @@
+_~*
+xcuserdata
+*.xcscmblueprint
+
+# OS X noise
+.DS_Store
+
+# TMP data
+Build/*
+DerivedData
+.idea/
+
+Submodules/*
+Pods/*
