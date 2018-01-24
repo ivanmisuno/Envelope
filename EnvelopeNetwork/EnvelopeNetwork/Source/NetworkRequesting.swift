@@ -8,7 +8,7 @@
 
 import Alamofire
 
-protocol NetworkRequesting {
+public protocol NetworkRequesting {
     var request: URLRequest? { get }
     var response: HTTPURLResponse? { get }
 
@@ -32,7 +32,7 @@ protocol NetworkRequesting {
         -> Self
 }
 
-extension NetworkRequesting {
+public extension NetworkRequesting {
 
     @discardableResult
     func progress(

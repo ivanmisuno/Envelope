@@ -8,16 +8,16 @@
 
 import Alamofire
 
-final class AlamofireNetwork: Networking {
+public final class AlamofireNetwork: Networking {
 
     private let alamofireSessionManager: SessionManager
 
-    init(alamofireSessionManager: SessionManager) {
+    public init(alamofireSessionManager: SessionManager) {
         self.alamofireSessionManager = alamofireSessionManager
     }
 
     // MARK: - Networking
-    func request(
+    public func request(
         _ url: URLConvertible,
         method: HTTPMethod,
         parameters: Parameters?,
@@ -29,7 +29,7 @@ final class AlamofireNetwork: Networking {
             return AlamofireNetworkRequest(alamofireRequest: alamofireRequest)
     }
 
-    func upload(
+    public func upload(
         _ data: Data,
         to url: URLConvertible,
         method: HTTPMethod,

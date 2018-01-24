@@ -8,18 +8,18 @@
 
 import Alamofire
 
-final class AlamofireNetworkUploadRequest: AlamofireNetworkRequest, NetworkUploadRequesting {
+public final class AlamofireNetworkUploadRequest: AlamofireNetworkRequest, NetworkUploadRequesting {
 
     private let alamofireUploadRequest: UploadRequest
 
-    init(alamofireUploadRequest: UploadRequest) {
+    public init(alamofireUploadRequest: UploadRequest) {
         self.alamofireUploadRequest = alamofireUploadRequest
         super.init(alamofireRequest: alamofireUploadRequest)
     }
 
     // MARK: - NetworkUploadRequesting
     @discardableResult
-    func uploadProgress(
+    public func uploadProgress(
         queue: DispatchQueue,
         closure: @escaping Request.ProgressHandler)
         -> Self {

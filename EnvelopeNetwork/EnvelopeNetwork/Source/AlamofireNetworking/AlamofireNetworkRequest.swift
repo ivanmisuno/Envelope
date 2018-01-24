@@ -8,24 +8,25 @@
 
 import Alamofire
 
-class AlamofireNetworkRequest: NetworkRequesting {
+// Cannot make it `final`, AlamofireNetworkUploadRequest inherits from it.
+public class AlamofireNetworkRequest: NetworkRequesting {
 
     private let alamofireRequest: DataRequest
 
-    init(alamofireRequest: DataRequest) {
+    public init(alamofireRequest: DataRequest) {
         self.alamofireRequest = alamofireRequest
     }
 
     // MARK: - NetworkRequesting
-    var request: URLRequest? { return alamofireRequest.request }
-    var response: HTTPURLResponse? { return alamofireRequest.response }
+    public final var request: URLRequest? { return alamofireRequest.request }
+    public final var response: HTTPURLResponse? { return alamofireRequest.response }
 
-    func cancel() {
+    public final func cancel() {
         alamofireRequest.cancel()
     }
 
     @discardableResult
-    func progress(
+    public final func progress(
         queue: DispatchQueue,
         progressHandler: @escaping Request.ProgressHandler)
         -> Self {
@@ -36,7 +37,7 @@ class AlamofireNetworkRequest: NetworkRequesting {
     }
 
     @discardableResult
-    func response<T: DataResponseSerializerProtocol>(
+    public final func response<T: DataResponseSerializerProtocol>(
         queue: DispatchQueue,
         responseSerializer: T,
         completionHandler: @escaping (DataResponse<T.SerializedObject>) -> Void)
@@ -50,7 +51,7 @@ class AlamofireNetworkRequest: NetworkRequesting {
     }
 
     @discardableResult
-    func validate(validation: @escaping DataRequest.Validation)
+    public final func validate(validation: @escaping DataRequest.Validation)
         -> Self {
 
             alamofireRequest.validate(validation)

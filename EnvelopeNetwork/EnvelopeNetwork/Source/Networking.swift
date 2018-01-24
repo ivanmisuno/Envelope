@@ -10,7 +10,7 @@ import Alamofire
 
 /// A network abstraction layer protocol.
 /// It follows Alamofire conventions and references Alamofire primitive types, which is fine, since we only want to abstract the functional layer.
-protocol Networking {
+public protocol Networking {
     func request(
         _ url: URLConvertible,
         method: HTTPMethod,
@@ -27,7 +27,7 @@ protocol Networking {
         -> NetworkUploadRequesting
 }
 
-extension Networking {
+public extension Networking {
     func request(
         _ url: URLConvertible,
         method: HTTPMethod,
@@ -66,7 +66,7 @@ extension Networking {
 
 }
 
-extension Networking {
+public extension Networking {
     func post(
         _ url: URLConvertible,
         httpBody: Data,

@@ -31,7 +31,26 @@
 		14F27ACB2019284200601EF2 /* NetworkingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ACA2019284200601EF2 /* NetworkingSpec.swift */; };
 		14F27ACE2019288400601EF2 /* AlamofireNetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ACD2019288400601EF2 /* AlamofireNetworkSpec.swift */; };
 		14F27AD0201928BD00601EF2 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ACF201928BD00601EF2 /* Types.swift */; };
+		14F27ADF20192CCC00601EF2 /* EnvelopeNetworkRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F27AD620192CCC00601EF2 /* EnvelopeNetworkRx.framework */; };
+		14F27AE620192CCC00601EF2 /* EnvelopeNetworkRx.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F27AD820192CCC00601EF2 /* EnvelopeNetworkRx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14F27AEE20192DDB00601EF2 /* resultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AB62019261700601EF2 /* resultMatchers.swift */; };
+		14F27AF020192DDB00601EF2 /* TestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AB22019254400601EF2 /* TestSpec.swift */; };
+		14F27AF120192DDB00601EF2 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ACF201928BD00601EF2 /* Types.swift */; };
+		14F27AF420192E2000601EF2 /* eventMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AF320192E2000601EF2 /* eventMatchers.swift */; };
+		14F27AF620192E3B00601EF2 /* eventMatchersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AF520192E3B00601EF2 /* eventMatchersSpec.swift */; };
+		14F27AF92019304800601EF2 /* RxSingleEvent+unboxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AF82019304800601EF2 /* RxSingleEvent+unboxing.swift */; };
+		14F27AFB2019306300601EF2 /* TestSpec+exampleDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AFA2019306300601EF2 /* TestSpec+exampleDisposable.swift */; };
+		14F27B00201930BF00601EF2 /* Networking+RxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AFF201930BF00601EF2 /* Networking+RxSpec.swift */; };
+		14F27B022019310100601EF2 /* Networking+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27B012019310100601EF2 /* Networking+Rx.swift */; };
+		14F27B042019312600601EF2 /* RxProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27B032019312600601EF2 /* RxProgress.swift */; };
+		14F27B062019319C00601EF2 /* CodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27B052019319C00601EF2 /* CodableSerializer.swift */; };
+		14F27B092019336600601EF2 /* EnvelopeNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14438D322016A6DD00307011 /* EnvelopeNetwork.framework */; };
+		14F27B0A2019353B00601EF2 /* NetworkingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ABB2019273500601EF2 /* NetworkingMock.swift */; };
+		14F27B0B2019353B00601EF2 /* NetworkRequestingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ABD2019275900601EF2 /* NetworkRequestingMock.swift */; };
+		14F27B0C2019353B00601EF2 /* NetworkUploadRequestingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ABF2019278100601EF2 /* NetworkUploadRequestingMock.swift */; };
 		244EF4435C0F0F794E2E7876 /* Pods_Envelope_ios_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE15E01B84C08EEA453AD357 /* Pods_Envelope_ios_tests.framework */; };
+		3AE1BA6941A14241373272D8 /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20989DA3E26CB5D47B5A61DA /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework */; };
+		55E3E10D006578EBBBC043BC /* Pods_EnvelopeNetworkRx_ios_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355ACCC61EDA96F0D24E0DBB /* Pods_EnvelopeNetworkRx_ios_tests.framework */; };
 		96871043AA22F2D6B2D76B8C /* Pods_Envelope_Framework_Envelope_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5734AEDF4CB29514A3EB9D85 /* Pods_Envelope_Framework_Envelope_ios.framework */; };
 		AC4962EE07225315C8A3EB1A /* Pods_EnvelopeNetwork_ios_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB171EF1E17E2152275881B2 /* Pods_EnvelopeNetwork_ios_tests.framework */; };
 		DCEF4F557EA640D21B596CB0 /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413A6FD48466E37BC3AC164B /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework */; };
@@ -44,6 +63,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 14438D312016A6DD00307011;
 			remoteInfo = Envelope;
+		};
+		14F27AE020192CCC00601EF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14438D292016A6DD00307011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14F27AD520192CCC00601EF2;
+			remoteInfo = EnvelopeNetworkRx;
+		};
+		14F27B072019335E00601EF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14438D292016A6DD00307011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14438D312016A6DD00307011;
+			remoteInfo = "EnvelopeNetwork-ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -76,16 +109,35 @@
 		14F27ACA2019284200601EF2 /* NetworkingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingSpec.swift; sourceTree = "<group>"; };
 		14F27ACD2019288400601EF2 /* AlamofireNetworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkSpec.swift; sourceTree = "<group>"; };
 		14F27ACF201928BD00601EF2 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		14F27AD620192CCC00601EF2 /* EnvelopeNetworkRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EnvelopeNetworkRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F27AD820192CCC00601EF2 /* EnvelopeNetworkRx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnvelopeNetworkRx.h; sourceTree = "<group>"; };
+		14F27AD920192CCC00601EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F27ADE20192CCC00601EF2 /* EnvelopeNetworkRx-ios-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EnvelopeNetworkRx-ios-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F27AE520192CCC00601EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F27AF320192E2000601EF2 /* eventMatchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventMatchers.swift; sourceTree = "<group>"; };
+		14F27AF520192E3B00601EF2 /* eventMatchersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventMatchersSpec.swift; sourceTree = "<group>"; };
+		14F27AF82019304800601EF2 /* RxSingleEvent+unboxing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSingleEvent+unboxing.swift"; sourceTree = "<group>"; };
+		14F27AFA2019306300601EF2 /* TestSpec+exampleDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestSpec+exampleDisposable.swift"; sourceTree = "<group>"; };
+		14F27AFF201930BF00601EF2 /* Networking+RxSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+RxSpec.swift"; sourceTree = "<group>"; };
+		14F27B012019310100601EF2 /* Networking+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+Rx.swift"; sourceTree = "<group>"; };
+		14F27B032019312600601EF2 /* RxProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxProgress.swift; sourceTree = "<group>"; };
+		14F27B052019319C00601EF2 /* CodableSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerializer.swift; sourceTree = "<group>"; };
+		20989DA3E26CB5D47B5A61DA /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		355ACCC61EDA96F0D24E0DBB /* Pods_EnvelopeNetworkRx_ios_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnvelopeNetworkRx_ios_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		413A6FD48466E37BC3AC164B /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Envelope_Framework_EnvelopeNetwork_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A4E514F373D4C3FE1A070B /* Pods-Envelope_Framework-EnvelopeNetworkRx-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeNetworkRx-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeNetworkRx-ios/Pods-Envelope_Framework-EnvelopeNetworkRx-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		4C1B418B2C30EA9AC7863A38 /* Pods-EnvelopeNetwork-ios-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvelopeNetwork-ios-tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnvelopeNetwork-ios-tests/Pods-EnvelopeNetwork-ios-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5734AEDF4CB29514A3EB9D85 /* Pods_Envelope_Framework_Envelope_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Envelope_Framework_Envelope_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64195ED86D6184B5A6FE4F66 /* Pods-Envelope_Framework-EnvelopeNetwork-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeNetwork-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeNetwork-ios/Pods-Envelope_Framework-EnvelopeNetwork-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		85E377B39878ED8F6072D019 /* Pods-EnvelopeNetworkRx-ios-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvelopeNetworkRx-ios-tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnvelopeNetworkRx-ios-tests/Pods-EnvelopeNetworkRx-ios-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A36AC67584543B7FD94992C5 /* Pods-Envelope_Framework-Envelope-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-Envelope-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-Envelope-ios/Pods-Envelope_Framework-Envelope-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		AB171EF1E17E2152275881B2 /* Pods_EnvelopeNetwork_ios_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnvelopeNetwork_ios_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8C5CD3BEDE7446D3016D01 /* Pods-Envelope-ios-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope-ios-tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope-ios-tests/Pods-Envelope-ios-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B28E4615555847531B49BA44 /* Pods-Envelope_Framework-EnvelopeNetwork-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeNetwork-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeNetwork-ios/Pods-Envelope_Framework-EnvelopeNetwork-ios.release.xcconfig"; sourceTree = "<group>"; };
 		E895ACA4E548E3DF37BF6D8A /* Pods-Envelope_Framework-Envelope-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-Envelope-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-Envelope-ios/Pods-Envelope_Framework-Envelope-ios.release.xcconfig"; sourceTree = "<group>"; };
+		F04BDF826A2AD71015EB1BB8 /* Pods-EnvelopeNetworkRx-ios-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvelopeNetworkRx-ios-tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnvelopeNetworkRx-ios-tests/Pods-EnvelopeNetworkRx-ios-tests.release.xcconfig"; sourceTree = "<group>"; };
 		F3851648257DBFA6A0F2CC6A /* Pods-Envelope-ios-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope-ios-tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope-ios-tests/Pods-Envelope-ios-tests.release.xcconfig"; sourceTree = "<group>"; };
+		F48B1B2C847D77A382987938 /* Pods-Envelope_Framework-EnvelopeNetworkRx-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeNetworkRx-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeNetworkRx-ios/Pods-Envelope_Framework-EnvelopeNetworkRx-ios.release.xcconfig"; sourceTree = "<group>"; };
 		FE15E01B84C08EEA453AD357 /* Pods_Envelope_ios_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Envelope_ios_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +161,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14F27AD220192CCC00601EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F27B092019336600601EF2 /* EnvelopeNetwork.framework in Frameworks */,
+				3AE1BA6941A14241373272D8 /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F27ADB20192CCC00601EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F27ADF20192CCC00601EF2 /* EnvelopeNetworkRx.framework in Frameworks */,
+				55E3E10D006578EBBBC043BC /* Pods_EnvelopeNetworkRx_ios_tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -116,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				14438D342016A6DD00307011 /* EnvelopeNetwork */,
+				14F27AD720192CCC00601EF2 /* EnvelopeNetworkRx */,
 				14F27AAF201924C400601EF2 /* Shared */,
 				14438D332016A6DD00307011 /* Products */,
 				FF83E9C708A435F8BC48B9D8 /* Pods */,
@@ -128,6 +199,8 @@
 			children = (
 				14438D322016A6DD00307011 /* EnvelopeNetwork.framework */,
 				14438D3B2016A6DD00307011 /* EnvelopeNetwork-ios-tests.xctest */,
+				14F27AD620192CCC00601EF2 /* EnvelopeNetworkRx.framework */,
+				14F27ADE20192CCC00601EF2 /* EnvelopeNetworkRx-ios-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +217,6 @@
 		14438D3F2016A6DD00307011 /* EnvelopeNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				14F27ABA2019272700601EF2 /* ManualMocks */,
 				14F27AC1201927C400601EF2 /* Extensions */,
 				14F27ACC2019287B00601EF2 /* AlamofireNetworking */,
 				14F27ACA2019284200601EF2 /* NetworkingSpec.swift */,
@@ -180,6 +252,7 @@
 			children = (
 				14F27AA22019170400601EF2 /* HttpBodyEncoding.swift */,
 				14F27AA42019171B00601EF2 /* JsonEncodableBodyEncoding.swift */,
+				14F27B052019319C00601EF2 /* CodableSerializer.swift */,
 				14F27AA62019174900601EF2 /* ResponseSerialization.swift */,
 			);
 			path = Extensions;
@@ -207,6 +280,7 @@
 		14F27AB0201924E200601EF2 /* SharedTests */ = {
 			isa = PBXGroup;
 			children = (
+				14F27ABA2019272700601EF2 /* ManualMocks */,
 				14F27AB52019260400601EF2 /* Matchers */,
 				14F27AB22019254400601EF2 /* TestSpec.swift */,
 				14F27ACF201928BD00601EF2 /* Types.swift */,
@@ -217,6 +291,8 @@
 		14F27AB1201924F900601EF2 /* SharedTestsRx */ = {
 			isa = PBXGroup;
 			children = (
+				14F27AF72019303700601EF2 /* Extensions */,
+				14F27AF220192E0000601EF2 /* Matchers */,
 			);
 			path = SharedTestsRx;
 			sourceTree = "<group>";
@@ -259,6 +335,77 @@
 			path = AlamofireNetworking;
 			sourceTree = "<group>";
 		};
+		14F27AD720192CCC00601EF2 /* EnvelopeNetworkRx */ = {
+			isa = PBXGroup;
+			children = (
+				14F27AED20192D4300601EF2 /* EnvelopeNetworkRx */,
+				14F27AE220192CCC00601EF2 /* EnvelopeNetworkRxTests */,
+			);
+			path = EnvelopeNetworkRx;
+			sourceTree = "<group>";
+		};
+		14F27AE220192CCC00601EF2 /* EnvelopeNetworkRxTests */ = {
+			isa = PBXGroup;
+			children = (
+				14F27AFE201930B800601EF2 /* Extensions */,
+				14F27AE520192CCC00601EF2 /* Info.plist */,
+			);
+			path = EnvelopeNetworkRxTests;
+			sourceTree = "<group>";
+		};
+		14F27AED20192D4300601EF2 /* EnvelopeNetworkRx */ = {
+			isa = PBXGroup;
+			children = (
+				14F27AFC2019308D00601EF2 /* EnvelopeNetworkRx */,
+				14F27AD820192CCC00601EF2 /* EnvelopeNetworkRx.h */,
+				14F27AD920192CCC00601EF2 /* Info.plist */,
+			);
+			path = EnvelopeNetworkRx;
+			sourceTree = "<group>";
+		};
+		14F27AF220192E0000601EF2 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				14F27AF320192E2000601EF2 /* eventMatchers.swift */,
+				14F27AF520192E3B00601EF2 /* eventMatchersSpec.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		14F27AF72019303700601EF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14F27AF82019304800601EF2 /* RxSingleEvent+unboxing.swift */,
+				14F27AFA2019306300601EF2 /* TestSpec+exampleDisposable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14F27AFC2019308D00601EF2 /* EnvelopeNetworkRx */ = {
+			isa = PBXGroup;
+			children = (
+				14F27AFD2019309E00601EF2 /* Extensions */,
+			);
+			path = EnvelopeNetworkRx;
+			sourceTree = "<group>";
+		};
+		14F27AFD2019309E00601EF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14F27B012019310100601EF2 /* Networking+Rx.swift */,
+				14F27B032019312600601EF2 /* RxProgress.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14F27AFE201930B800601EF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14F27AFF201930BF00601EF2 /* Networking+RxSpec.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		52D6C52398C7015FC696B00C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +413,8 @@
 				5734AEDF4CB29514A3EB9D85 /* Pods_Envelope_Framework_Envelope_ios.framework */,
 				AB171EF1E17E2152275881B2 /* Pods_EnvelopeNetwork_ios_tests.framework */,
 				413A6FD48466E37BC3AC164B /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework */,
+				355ACCC61EDA96F0D24E0DBB /* Pods_EnvelopeNetworkRx_ios_tests.framework */,
+				20989DA3E26CB5D47B5A61DA /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,6 +430,10 @@
 				08EB407D46CA6EC9E9FDA2BB /* Pods-EnvelopeNetwork-ios-tests.release.xcconfig */,
 				64195ED86D6184B5A6FE4F66 /* Pods-Envelope_Framework-EnvelopeNetwork-ios.debug.xcconfig */,
 				B28E4615555847531B49BA44 /* Pods-Envelope_Framework-EnvelopeNetwork-ios.release.xcconfig */,
+				85E377B39878ED8F6072D019 /* Pods-EnvelopeNetworkRx-ios-tests.debug.xcconfig */,
+				F04BDF826A2AD71015EB1BB8 /* Pods-EnvelopeNetworkRx-ios-tests.release.xcconfig */,
+				42A4E514F373D4C3FE1A070B /* Pods-Envelope_Framework-EnvelopeNetworkRx-ios.debug.xcconfig */,
+				F48B1B2C847D77A382987938 /* Pods-Envelope_Framework-EnvelopeNetworkRx-ios.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -293,6 +446,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				14438D432016A6DD00307011 /* EnvelopeNetwork.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F27AD320192CCC00601EF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F27AE620192CCC00601EF2 /* EnvelopeNetworkRx.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +501,48 @@
 			productReference = 14438D3B2016A6DD00307011 /* EnvelopeNetwork-ios-tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		14F27AD520192CCC00601EF2 /* EnvelopeNetworkRx-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14F27AE720192CCC00601EF2 /* Build configuration list for PBXNativeTarget "EnvelopeNetworkRx-ios" */;
+			buildPhases = (
+				7793DAF4968667B10F16DCC1 /* [CP] Check Pods Manifest.lock */,
+				14F27AD120192CCC00601EF2 /* Sources */,
+				14F27AD220192CCC00601EF2 /* Frameworks */,
+				14F27AD320192CCC00601EF2 /* Headers */,
+				14F27AD420192CCC00601EF2 /* Resources */,
+				407A4028F65319EEF1F64CEA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14F27B082019335E00601EF2 /* PBXTargetDependency */,
+			);
+			name = "EnvelopeNetworkRx-ios";
+			productName = EnvelopeNetworkRx;
+			productReference = 14F27AD620192CCC00601EF2 /* EnvelopeNetworkRx.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		14F27ADD20192CCC00601EF2 /* EnvelopeNetworkRx-ios-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14F27AEA20192CCC00601EF2 /* Build configuration list for PBXNativeTarget "EnvelopeNetworkRx-ios-tests" */;
+			buildPhases = (
+				5C8F0A333952C74920592EC0 /* [CP] Check Pods Manifest.lock */,
+				14F27ADA20192CCC00601EF2 /* Sources */,
+				14F27ADB20192CCC00601EF2 /* Frameworks */,
+				14F27ADC20192CCC00601EF2 /* Resources */,
+				140BA790BCF85B7C3099C240 /* [CP] Embed Pods Frameworks */,
+				B8A73185F52287D9F74B7400 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14F27AE120192CCC00601EF2 /* PBXTargetDependency */,
+			);
+			name = "EnvelopeNetworkRx-ios-tests";
+			productName = EnvelopeNetworkRxTests;
+			productReference = 14F27ADE20192CCC00601EF2 /* EnvelopeNetworkRx-ios-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -359,6 +562,15 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					14F27AD520192CCC00601EF2 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					14F27ADD20192CCC00601EF2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 14438D2C2016A6DD00307011 /* Build configuration list for PBXProject "Envelope" */;
@@ -375,6 +587,8 @@
 			targets = (
 				14438D312016A6DD00307011 /* EnvelopeNetwork-ios */,
 				14438D3A2016A6DD00307011 /* EnvelopeNetwork-ios-tests */,
+				14F27AD520192CCC00601EF2 /* EnvelopeNetworkRx-ios */,
+				14F27ADD20192CCC00601EF2 /* EnvelopeNetworkRx-ios-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -388,6 +602,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		14438D392016A6DD00307011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F27AD420192CCC00601EF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F27ADC20192CCC00601EF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -430,6 +658,65 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnvelopeNetwork-ios-tests/Pods-EnvelopeNetwork-ios-tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		140BA790BCF85B7C3099C240 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EnvelopeNetworkRx-ios-tests/Pods-EnvelopeNetworkRx-ios-tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnvelopeNetworkRx-ios-tests/Pods-EnvelopeNetworkRx-ios-tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		407A4028F65319EEF1F64CEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeNetworkRx-ios/Pods-Envelope_Framework-EnvelopeNetworkRx-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C8F0A333952C74920592EC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnvelopeNetworkRx-ios-tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6BF1BC683702F50EDC1346EA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,6 +739,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnvelopeNetwork-ios-tests/Pods-EnvelopeNetwork-ios-tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7793DAF4968667B10F16DCC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Envelope_Framework-EnvelopeNetworkRx-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AE4A1DA40743CC133AE89FA3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,6 +770,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeNetwork-ios/Pods-Envelope_Framework-EnvelopeNetwork-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A73185F52287D9F74B7400 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnvelopeNetworkRx-ios-tests/Pods-EnvelopeNetworkRx-ios-tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1631CD971A34FD265B71205 /* [CP] Check Pods Manifest.lock */ = {
@@ -496,6 +816,7 @@
 				14F27AA72019174900601EF2 /* ResponseSerialization.swift in Sources */,
 				14F27AA920191F9300601EF2 /* AlamofireNetwork.swift in Sources */,
 				14F27AAB20191FB000601EF2 /* AlamofireNetworkRequest.swift in Sources */,
+				14F27B062019319C00601EF2 /* CodableSerializer.swift in Sources */,
 				14F27A9F2019169500601EF2 /* NetworkUploadRequesting.swift in Sources */,
 				14438D4E2016A72500307011 /* Networking.swift in Sources */,
 				14F27AAD20191FC700601EF2 /* AlamofireNetworkUploadRequest.swift in Sources */,
@@ -524,6 +845,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14F27AD120192CCC00601EF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F27B042019312600601EF2 /* RxProgress.swift in Sources */,
+				14F27B022019310100601EF2 /* Networking+Rx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F27ADA20192CCC00601EF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F27B0C2019353B00601EF2 /* NetworkUploadRequestingMock.swift in Sources */,
+				14F27AEE20192DDB00601EF2 /* resultMatchers.swift in Sources */,
+				14F27AF620192E3B00601EF2 /* eventMatchersSpec.swift in Sources */,
+				14F27B00201930BF00601EF2 /* Networking+RxSpec.swift in Sources */,
+				14F27B0B2019353B00601EF2 /* NetworkRequestingMock.swift in Sources */,
+				14F27AF92019304800601EF2 /* RxSingleEvent+unboxing.swift in Sources */,
+				14F27AFB2019306300601EF2 /* TestSpec+exampleDisposable.swift in Sources */,
+				14F27B0A2019353B00601EF2 /* NetworkingMock.swift in Sources */,
+				14F27AF020192DDB00601EF2 /* TestSpec.swift in Sources */,
+				14F27AF120192DDB00601EF2 /* Types.swift in Sources */,
+				14F27AF420192E2000601EF2 /* eventMatchers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -531,6 +879,16 @@
 			isa = PBXTargetDependency;
 			target = 14438D312016A6DD00307011 /* EnvelopeNetwork-ios */;
 			targetProxy = 14438D3D2016A6DD00307011 /* PBXContainerItemProxy */;
+		};
+		14F27AE120192CCC00601EF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14F27AD520192CCC00601EF2 /* EnvelopeNetworkRx-ios */;
+			targetProxy = 14F27AE020192CCC00601EF2 /* PBXContainerItemProxy */;
+		};
+		14F27B082019335E00601EF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14438D312016A6DD00307011 /* EnvelopeNetwork-ios */;
+			targetProxy = 14F27B072019335E00601EF2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -721,6 +1079,79 @@
 			};
 			name = Release;
 		};
+		14F27AE820192CCC00601EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A4E514F373D4C3FE1A070B /* Pods-Envelope_Framework-EnvelopeNetworkRx-ios.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EnvelopeNetworkRx/EnvelopeNetworkRx/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popappfactory.EnvelopeNetworkRx;
+				PRODUCT_NAME = EnvelopeNetworkRx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14F27AE920192CCC00601EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F48B1B2C847D77A382987938 /* Pods-Envelope_Framework-EnvelopeNetworkRx-ios.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EnvelopeNetworkRx/EnvelopeNetworkRx/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popappfactory.EnvelopeNetworkRx;
+				PRODUCT_NAME = EnvelopeNetworkRx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14F27AEB20192CCC00601EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E377B39878ED8F6072D019 /* Pods-EnvelopeNetworkRx-ios-tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnvelopeNetworkRx/EnvelopeNetworkRxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popappfactory.EnvelopeNetworkRxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14F27AEC20192CCC00601EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F04BDF826A2AD71015EB1BB8 /* Pods-EnvelopeNetworkRx-ios-tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnvelopeNetworkRx/EnvelopeNetworkRxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popappfactory.EnvelopeNetworkRxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -747,6 +1178,24 @@
 			buildConfigurations = (
 				14438D4A2016A6DD00307011 /* Debug */,
 				14438D4B2016A6DD00307011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14F27AE720192CCC00601EF2 /* Build configuration list for PBXNativeTarget "EnvelopeNetworkRx-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F27AE820192CCC00601EF2 /* Debug */,
+				14F27AE920192CCC00601EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14F27AEA20192CCC00601EF2 /* Build configuration list for PBXNativeTarget "EnvelopeNetworkRx-ios-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F27AEB20192CCC00601EF2 /* Debug */,
+				14F27AEC20192CCC00601EF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

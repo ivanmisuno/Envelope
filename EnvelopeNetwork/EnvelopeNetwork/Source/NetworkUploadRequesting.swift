@@ -8,7 +8,7 @@
 
 import Alamofire
 
-protocol NetworkUploadRequesting: NetworkRequesting {
+public protocol NetworkUploadRequesting: NetworkRequesting {
 
     @discardableResult
     func uploadProgress(
@@ -17,7 +17,7 @@ protocol NetworkUploadRequesting: NetworkRequesting {
         -> Self
 }
 
-extension NetworkUploadRequesting {
+public extension NetworkUploadRequesting {
 
     @discardableResult
     func uploadProgress(

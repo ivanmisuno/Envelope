@@ -8,7 +8,7 @@
 
 import Alamofire
 
-extension NetworkRequesting {
+public extension NetworkRequesting {
 
     @discardableResult
     func response(
@@ -28,7 +28,7 @@ extension NetworkRequesting {
     }
 }
 
-extension NetworkRequesting {
+public extension NetworkRequesting {
 
     @discardableResult
     func responseData(
@@ -41,7 +41,7 @@ extension NetworkRequesting {
     }
 }
 
-extension NetworkRequesting {
+public extension NetworkRequesting {
 
     @discardableResult
     func responseJSON(
@@ -54,30 +54,7 @@ extension NetworkRequesting {
     }
 }
 
-struct CodableSerializer<T: Decodable>: DataResponseSerializerProtocol {
-
-    // MARK: - DataResponseSerializerProtocol
-    typealias SerializedObject = T
-
-    var serializeResponse: (URLRequest?, HTTPURLResponse?, Data?, Error?) -> Result<SerializedObject> {
-        return { (request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) -> Result<SerializedObject> in
-            let result = Request.serializeResponseData(response: response, data: data, error: error)
-            switch result {
-            case .success(let data):
-                do {
-                    let decodedObject = try JSONDecoder().decode(T.self, from: data)
-                    return .success(decodedObject)
-                } catch {
-                    return .failure(AFError.responseSerializationFailed(reason: .jsonSerializationFailed(error: error)))
-                }
-            case .failure(let error):
-                return .failure(error)
-            }
-        }
-    }
-}
-
-extension NetworkRequesting {
+public extension NetworkRequesting {
 
     @discardableResult
     func responseObject<T: Decodable>(
