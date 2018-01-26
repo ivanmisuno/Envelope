@@ -6,12 +6,13 @@
 //  Copyright © 2018. All rights reserved.
 //
 
+import Alamofire
+import RxSwift
 import Quick
 import Nimble
 @testable import EnvelopeNetwork
 @testable import EnvelopeNetworkRx
-import Alamofire
-import RxSwift
+import EnvelopeTest
 
 class NetworkingRxSpec: TestSpec {
     override func spec() {

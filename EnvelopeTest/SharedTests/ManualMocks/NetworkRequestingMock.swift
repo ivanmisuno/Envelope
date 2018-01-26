@@ -9,21 +9,24 @@
 @testable import EnvelopeNetwork
 import Alamofire
 
-class NetworkRequestingMock<T: DataResponseSerializerProtocol>: NetworkRequesting {
+public class NetworkRequestingMock<T: DataResponseSerializerProtocol>: NetworkRequesting {
+
+    public init() {
+    }
 
     // MARK: - NetworkRequesting
-    var request: URLRequest?
-    var response: HTTPURLResponse?
+    public var request: URLRequest?
+    public var response: HTTPURLResponse?
 
-    func cancel() {
+    public func cancel() {
         cancelCallCount += 1
         cancelHandler?()
     }
-    var cancelCallCount: Int = 0
-    var cancelHandler: (() -> ())? = nil
+    public var cancelCallCount: Int = 0
+    public var cancelHandler: (() -> ())? = nil
 
     @discardableResult
-    func progress(
+    public func progress(
         queue: DispatchQueue,
         progressHandler: @escaping Request.ProgressHandler)
         -> Self {
@@ -32,11 +35,11 @@ class NetworkRequestingMock<T: DataResponseSerializerProtocol>: NetworkRequestin
             self.progressHandler?(queue, progressHandler)
             return self
     }
-    var progressCallCount: Int = 0
-    var progressHandler: ((_ queue: DispatchQueue, _ progressHandler: @escaping Request.ProgressHandler) -> ())? = nil
+    public var progressCallCount: Int = 0
+    public var progressHandler: ((_ queue: DispatchQueue, _ progressHandler: @escaping Request.ProgressHandler) -> ())? = nil
 
     @discardableResult
-    func response<U: DataResponseSerializerProtocol>(
+    public func response<U: DataResponseSerializerProtocol>(
         queue: DispatchQueue,
         responseSerializer: U,
         completionHandler: @escaping (DataResponse<U.SerializedObject>) -> Void)
@@ -62,20 +65,20 @@ class NetworkRequestingMock<T: DataResponseSerializerProtocol>: NetworkRequestin
 
             return self
     }
-    var responseCallCount: Int = 0
-    var responseHandler: ((_ queue: DispatchQueue, _ responseSerializer: T, _ completionHandler: (DataResponse<T.SerializedObject>) -> ()) -> ())? = nil
-    var responseHandlerContextLocation: (file: StaticString, line: UInt)? = nil
+    public var responseCallCount: Int = 0
+    public var responseHandler: ((_ queue: DispatchQueue, _ responseSerializer: T, _ completionHandler: (DataResponse<T.SerializedObject>) -> ()) -> ())? = nil
+    public var responseHandlerContextLocation: (file: StaticString, line: UInt)? = nil
 
     @discardableResult
-    func validate(validation: @escaping DataRequest.Validation)
+    public func validate(validation: @escaping DataRequest.Validation)
         -> Self {
 
             validateCallCount += 1
             validateHandler?(validation)
             return self
     }
-    var validateCallCount: Int = 0
-    var validateHandler: ((_ validation: @escaping DataRequest.Validation) -> ())? = nil
+    public var validateCallCount: Int = 0
+    public var validateHandler: ((_ validation: @escaping DataRequest.Validation) -> ())? = nil
 
 }
 
@@ -95,7 +98,7 @@ fileprivate func executeValidations(_ validations: [DataRequest.Validation],
 
 extension NetworkingMock {
 
-    func mockResponse<T: Decodable>(
+    public func mockResponse<T: Decodable>(
         _ mockResult: Result<T>,
         mockData: Data? = nil,
         resultStatusCode: Int = 200,
@@ -151,7 +154,7 @@ extension NetworkingMock {
         }
     }
 
-    func mockResponse<T>(
+    public func mockResponse<T>(
         _ mockResult: Result<T>,
         mockData: Data? = nil,
         resultStatusCode: Int = 200,
@@ -207,7 +210,7 @@ extension NetworkingMock {
         }
     }
 
-    func mockUpload<T>(
+    public func mockUpload<T>(
         _ mockResult: Result<T>,
         mockData: Data? = nil,
         resultStatusCode: Int = 200,

@@ -6,10 +6,11 @@
 //  Copyright © 2018. All rights reserved.
 //
 
+import Alamofire
 import Quick
 import Nimble
 @testable import EnvelopeNetwork
-import Alamofire
+import EnvelopeTest
 
 class HttpBodyEncodingSpec: TestSpec {
     override func spec() {

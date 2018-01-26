@@ -12,8 +12,8 @@ import RxTest
 
 
 // MARK: - Event
-extension Event {
-    var isFailure: Bool {
+public extension Event {
+    public var isFailure: Bool {
         switch self {
         case .error:
             return true
@@ -23,7 +23,7 @@ extension Event {
     }
 }
 
-func beFailure<T>() -> Predicate<Event<T>> {
+public func beFailure<T>() -> Predicate<Event<T>> {
     return Predicate.define("be .failure") { actualExpression, msg in
         guard let actualValue = try actualExpression.evaluate() else {
             return PredicateResult(status: .fail, message: msg)
@@ -35,8 +35,8 @@ func beFailure<T>() -> Predicate<Event<T>> {
 
 
 // MARK: - SingleEvent
-extension SingleEvent {
-    var isSuccess: Bool {
+public extension SingleEvent {
+    public var isSuccess: Bool {
         switch self {
         case .success:
             return true
@@ -45,7 +45,7 @@ extension SingleEvent {
         }
     }
 
-    var isFailure: Bool {
+    public var isFailure: Bool {
         switch self {
         case .success:
             return false
@@ -55,7 +55,7 @@ extension SingleEvent {
     }
 }
 
-func beSuccess<T>() -> Predicate<SingleEvent<T>> {
+public func beSuccess<T>() -> Predicate<SingleEvent<T>> {
     return Predicate.define("be .success") { actualExpression, msg in
         guard let actualValue = try actualExpression.evaluate() else {
             return PredicateResult(status: .fail, message: msg)
@@ -65,7 +65,7 @@ func beSuccess<T>() -> Predicate<SingleEvent<T>> {
     }
 }
 
-func beFailure<T>() -> Predicate<SingleEvent<T>> {
+public func beFailure<T>() -> Predicate<SingleEvent<T>> {
     return Predicate.define("be .failure") { actualExpression, msg in
         guard let actualValue = try actualExpression.evaluate() else {
             return PredicateResult(status: .fail, message: msg)

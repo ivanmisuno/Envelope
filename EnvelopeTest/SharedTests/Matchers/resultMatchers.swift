@@ -9,7 +9,7 @@
 import Nimble
 import Alamofire
 
-func beFailure<T>() -> Predicate<Result<T>> {
+public func beFailure<T>() -> Predicate<Result<T>> {
     return Predicate.define("be .failure") { actualExpression, msg in
         guard let actualValue = try actualExpression.evaluate() else {
             return PredicateResult(status: .fail, message: msg)
@@ -19,7 +19,7 @@ func beFailure<T>() -> Predicate<Result<T>> {
     }
 }
 
-func beSuccess<T>() -> Predicate<Result<T>> {
+public func beSuccess<T>() -> Predicate<Result<T>> {
     return Predicate.define("be .success") { actualExpression, msg in
         guard let actualValue = try actualExpression.evaluate() else {
             return PredicateResult(status: .fail, message: msg)

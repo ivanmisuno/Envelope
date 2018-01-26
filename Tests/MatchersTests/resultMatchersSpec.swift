@@ -8,7 +8,8 @@
 
 import Alamofire
 import Quick
-@testable import Nimble
+@testable import Nimble // for `internal SourceLocation.init()`
+import EnvelopeTest
 
 class resultMatchersSpec: TestSpec {
     override func spec() {

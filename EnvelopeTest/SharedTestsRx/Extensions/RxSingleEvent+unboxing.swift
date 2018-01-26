@@ -8,9 +8,9 @@
 
 import RxSwift
 
-extension SingleEvent {
+public extension SingleEvent {
 
-    var value: Element? {
+    public var value: Element? {
         switch self {
         case .success(let value):
             return value
@@ -19,7 +19,7 @@ extension SingleEvent {
         }
     }
 
-    var error: Error? {
+    public var error: Error? {
         switch self {
         case .success:
             return nil

@@ -10,6 +10,7 @@ import Quick
 @testable import Nimble // for `internal SourceLocation.init()`
 import RxSwift
 import RxTest
+import EnvelopeTest
 
 class eventMatchersSpec: TestSpec {
     override func spec() {

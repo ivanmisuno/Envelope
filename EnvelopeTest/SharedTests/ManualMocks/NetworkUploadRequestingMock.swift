@@ -9,11 +9,11 @@
 @testable import EnvelopeNetwork
 import Alamofire
 
-class NetworkUploadRequestingMock<T: DataResponseSerializerProtocol>: NetworkRequestingMock<T>, NetworkUploadRequesting {
+public class NetworkUploadRequestingMock<T: DataResponseSerializerProtocol>: NetworkRequestingMock<T>, NetworkUploadRequesting {
 
     // MARK: - NetworkUploadRequesting
     @discardableResult
-    func uploadProgress(
+    public func uploadProgress(
         queue: DispatchQueue,
         closure: @escaping Request.ProgressHandler)
         -> Self {
@@ -22,6 +22,6 @@ class NetworkUploadRequestingMock<T: DataResponseSerializerProtocol>: NetworkReq
             self.uploadProgressHandler?(queue, closure)
             return self
     }
-    var uploadProgressCallCount: Int = 0
-    var uploadProgressHandler: ((_ queue: DispatchQueue, _ closure: @escaping Request.ProgressHandler) -> ())? = nil
+    public var uploadProgressCallCount: Int = 0
+    public var uploadProgressHandler: ((_ queue: DispatchQueue, _ closure: @escaping Request.ProgressHandler) -> ())? = nil
 }

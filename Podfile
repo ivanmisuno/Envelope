@@ -8,6 +8,16 @@ abstract_target 'Envelope_Framework' do
     inhibit_all_warnings!
 
     pod 'Alamofire'
+
+    target 'AllTests-ios' do
+      inherit! :search_paths
+
+      pod 'RxSwift'
+      pod 'RxTest'
+      pod 'Quick'
+      pod 'Nimble'
+    end
+
   end
 
   target 'EnvelopeNetworkRx-ios' do
@@ -19,15 +29,15 @@ abstract_target 'Envelope_Framework' do
     pod 'RxSwift'
   end
 
-  target 'AllTests-ios' do
+  target 'EnvelopeTests-ios' do
     platform :ios, '8.0'
     use_frameworks!
     inhibit_all_warnings!
 
     pod 'Alamofire'
+    pod 'RxSwift'
     pod 'RxTest'
     pod 'Quick'
     pod 'Nimble'
-
   end
 end

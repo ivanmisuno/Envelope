@@ -13,5 +13,5 @@ import Quick
 /// The main purpose of this class is to override at the run-time the pre-configured
 /// timers/schedulers/etc. to make testing of asynchronous code easier.
 /// It will also contain helper extensions (e.g., to record analytics events, simplify testing Rx code), etc.
-class TestSpec: QuickSpec {
+open class TestSpec: QuickSpec {
 }

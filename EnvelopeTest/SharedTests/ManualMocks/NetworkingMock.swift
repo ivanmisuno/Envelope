@@ -9,10 +9,13 @@
 @testable import EnvelopeNetwork
 import Alamofire
 
-class NetworkingMock: Networking {
+public class NetworkingMock: Networking {
+
+    public init() {
+    }
 
     // MARK: - Networking
-    func request(
+    public func request(
         _ url: URLConvertible,
         method: HTTPMethod,
         parameters: Parameters?,
@@ -26,14 +29,14 @@ class NetworkingMock: Networking {
             }
             preconditionFailure("Expected requestHandler to be set!")
     }
-    var requestCallCount: Int = 0
-    var requestHandler: ((_ url: URLConvertible,
+    public var requestCallCount: Int = 0
+    public var requestHandler: ((_ url: URLConvertible,
         _ method: HTTPMethod,
         _ parameters: Parameters?,
         _ encoding: ParameterEncoding,
         _ headers: HTTPHeaders?) -> NetworkRequesting)? = nil
 
-    func upload(
+    public func upload(
         _ data: Data,
         to url: URLConvertible,
         method: HTTPMethod,
@@ -46,8 +49,8 @@ class NetworkingMock: Networking {
             }
             preconditionFailure("Expected uploadHandler to be set!")
     }
-    var uploadCallCount: Int = 0
-    var uploadHandler: ((_ data: Data,
+    public var uploadCallCount: Int = 0
+    public var uploadHandler: ((_ data: Data,
         _ url: URLConvertible,
         _ method: HTTPMethod,
         _ headers: HTTPHeaders?) -> NetworkUploadRequesting)? = nil

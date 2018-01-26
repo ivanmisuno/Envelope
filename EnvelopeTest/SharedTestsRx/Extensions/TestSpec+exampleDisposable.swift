@@ -31,12 +31,12 @@ class TestConfiguration: QuickConfiguration {
     }
 }
 
-protocol ExampleDisposableBinding {
+public protocol ExampleDisposableBinding {
     var exampleDisposable: CompositeDisposable { get }
 }
 
 extension TestSpec: ExampleDisposableBinding {
-    var exampleDisposable: CompositeDisposable {
+    public var exampleDisposable: CompositeDisposable {
         guard let exampleDisposable = __exampleDisposable else {
             let exampleDisposable = CompositeDisposable()
             __exampleDisposable = exampleDisposable
@@ -46,10 +46,10 @@ extension TestSpec: ExampleDisposableBinding {
     }
 }
 
-extension Disposable {
+public extension Disposable {
 
     @discardableResult
-    func disposed(afterEach example: ExampleDisposableBinding) -> CompositeDisposable.DisposeKey? {
+    public func disposed(afterEach example: ExampleDisposableBinding) -> CompositeDisposable.DisposeKey? {
         return example.exampleDisposable.insert(self)
     }
 }

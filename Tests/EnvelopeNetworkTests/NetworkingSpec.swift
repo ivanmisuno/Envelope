@@ -8,8 +8,9 @@
 
 import Quick
 import Nimble
-@testable import EnvelopeNetwork
 import Alamofire
+@testable import EnvelopeNetwork
+import EnvelopeTest
 
 private struct JsonBody: Encodable {
     let a: String = "b"

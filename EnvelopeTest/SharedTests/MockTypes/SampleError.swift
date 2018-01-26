@@ -5,5 +5,7 @@
 //  Created by Ivan Misuno on 26-01-2018.
 //
 
-final class SampleError: Error {
+public final class SampleError: Error {
+    public init() {
+    }
 }
