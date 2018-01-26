@@ -12,3 +12,5 @@ DerivedData
 
 Submodules/*
 Pods/*
+Podfile.lock
+

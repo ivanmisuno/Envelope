@@ -1,15 +1,11 @@
 //
-//  Types.swift
-//  EnvelopeNetwork-ios-tests
+//  HttpBinResponse.swift
+//  Envelope
 //
-//  Created by Ivan Misuno on 24-01-2018.
-//  Copyright © 2018. All rights reserved.
+//  Created by Ivan Misuno on 26-01-2018.
 //
 
 import Foundation
-
-final class SampleError: Error {
-}
 
 struct HttpBinResponse: Decodable {
     let args: [String: String]
@@ -26,8 +22,4 @@ func ==(lhs: HttpBinResponse, rhs: HttpBinResponse) -> Bool {
         && lhs.headers == rhs.headers
         && lhs.origin == rhs.origin
         && lhs.url == rhs.url
-}
-
-struct UnknownResponse: Decodable {
-    let unknown: String
 }

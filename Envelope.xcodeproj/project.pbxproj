@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		14438D3C2016A6DD00307011 /* EnvelopeNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14438D322016A6DD00307011 /* EnvelopeNetwork.framework */; };
-		14438D432016A6DD00307011 /* EnvelopeNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 14438D352016A6DD00307011 /* EnvelopeNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14438D4E2016A72500307011 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14438D4D2016A72500307011 /* Networking.swift */; };
+		14C92744201BDAB70016C129 /* SampleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C92743201BDAB70016C129 /* SampleError.swift */; };
+		14C92745201BDAB70016C129 /* SampleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C92743201BDAB70016C129 /* SampleError.swift */; };
+		14C92747201BDACC0016C129 /* HttpBinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C92746201BDACC0016C129 /* HttpBinResponse.swift */; };
+		14C92748201BDACC0016C129 /* HttpBinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C92746201BDACC0016C129 /* HttpBinResponse.swift */; };
+		14C9274A201BDAE30016C129 /* UnknownResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C92749201BDAE30016C129 /* UnknownResponse.swift */; };
+		14C9274B201BDAE30016C129 /* UnknownResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C92749201BDAE30016C129 /* UnknownResponse.swift */; };
 		14F27A9D2019167800601EF2 /* NetworkRequesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27A9C2019167800601EF2 /* NetworkRequesting.swift */; };
 		14F27A9F2019169500601EF2 /* NetworkUploadRequesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27A9E2019169500601EF2 /* NetworkUploadRequesting.swift */; };
 		14F27AA32019170400601EF2 /* HttpBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AA22019170400601EF2 /* HttpBodyEncoding.swift */; };
@@ -30,12 +35,9 @@
 		14F27AC92019282100601EF2 /* ResponseSerializationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AC82019282100601EF2 /* ResponseSerializationSpec.swift */; };
 		14F27ACB2019284200601EF2 /* NetworkingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ACA2019284200601EF2 /* NetworkingSpec.swift */; };
 		14F27ACE2019288400601EF2 /* AlamofireNetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ACD2019288400601EF2 /* AlamofireNetworkSpec.swift */; };
-		14F27AD0201928BD00601EF2 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ACF201928BD00601EF2 /* Types.swift */; };
 		14F27ADF20192CCC00601EF2 /* EnvelopeNetworkRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F27AD620192CCC00601EF2 /* EnvelopeNetworkRx.framework */; };
-		14F27AE620192CCC00601EF2 /* EnvelopeNetworkRx.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F27AD820192CCC00601EF2 /* EnvelopeNetworkRx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14F27AEE20192DDB00601EF2 /* resultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AB62019261700601EF2 /* resultMatchers.swift */; };
 		14F27AF020192DDB00601EF2 /* TestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AB22019254400601EF2 /* TestSpec.swift */; };
-		14F27AF120192DDB00601EF2 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27ACF201928BD00601EF2 /* Types.swift */; };
 		14F27AF420192E2000601EF2 /* eventMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AF320192E2000601EF2 /* eventMatchers.swift */; };
 		14F27AF620192E3B00601EF2 /* eventMatchersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AF520192E3B00601EF2 /* eventMatchersSpec.swift */; };
 		14F27AF92019304800601EF2 /* RxSingleEvent+unboxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AF82019304800601EF2 /* RxSingleEvent+unboxing.swift */; };
@@ -83,11 +85,13 @@
 /* Begin PBXFileReference section */
 		08EB407D46CA6EC9E9FDA2BB /* Pods-EnvelopeNetwork-ios-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvelopeNetwork-ios-tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnvelopeNetwork-ios-tests/Pods-EnvelopeNetwork-ios-tests.release.xcconfig"; sourceTree = "<group>"; };
 		14438D322016A6DD00307011 /* EnvelopeNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EnvelopeNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14438D352016A6DD00307011 /* EnvelopeNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnvelopeNetwork.h; sourceTree = "<group>"; };
 		14438D362016A6DD00307011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14438D3B2016A6DD00307011 /* EnvelopeNetwork-ios-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EnvelopeNetwork-ios-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14438D422016A6DD00307011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14438D4D2016A72500307011 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		14C92743201BDAB70016C129 /* SampleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleError.swift; sourceTree = "<group>"; };
+		14C92746201BDACC0016C129 /* HttpBinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBinResponse.swift; sourceTree = "<group>"; };
+		14C92749201BDAE30016C129 /* UnknownResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownResponse.swift; sourceTree = "<group>"; };
 		14F27A9C2019167800601EF2 /* NetworkRequesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequesting.swift; sourceTree = "<group>"; };
 		14F27A9E2019169500601EF2 /* NetworkUploadRequesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUploadRequesting.swift; sourceTree = "<group>"; };
 		14F27AA22019170400601EF2 /* HttpBodyEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBodyEncoding.swift; sourceTree = "<group>"; };
@@ -108,9 +112,7 @@
 		14F27AC82019282100601EF2 /* ResponseSerializationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerializationSpec.swift; sourceTree = "<group>"; };
 		14F27ACA2019284200601EF2 /* NetworkingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingSpec.swift; sourceTree = "<group>"; };
 		14F27ACD2019288400601EF2 /* AlamofireNetworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkSpec.swift; sourceTree = "<group>"; };
-		14F27ACF201928BD00601EF2 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		14F27AD620192CCC00601EF2 /* EnvelopeNetworkRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EnvelopeNetworkRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F27AD820192CCC00601EF2 /* EnvelopeNetworkRx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnvelopeNetworkRx.h; sourceTree = "<group>"; };
 		14F27AD920192CCC00601EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F27ADE20192CCC00601EF2 /* EnvelopeNetworkRx-ios-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EnvelopeNetworkRx-ios-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F27AE520192CCC00601EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -237,6 +239,16 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		14C92742201BDAA90016C129 /* MockTypes */ = {
+			isa = PBXGroup;
+			children = (
+				14C92743201BDAB70016C129 /* SampleError.swift */,
+				14C92746201BDACC0016C129 /* HttpBinResponse.swift */,
+				14C92749201BDAE30016C129 /* UnknownResponse.swift */,
+			);
+			path = MockTypes;
+			sourceTree = "<group>";
+		};
 		14F27AA0201916E800601EF2 /* AlamofireNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				14438D4C2016A70100307011 /* Source */,
-				14438D352016A6DD00307011 /* EnvelopeNetwork.h */,
 				14438D362016A6DD00307011 /* Info.plist */,
 			);
 			path = EnvelopeNetwork;
@@ -280,10 +291,10 @@
 		14F27AB0201924E200601EF2 /* SharedTests */ = {
 			isa = PBXGroup;
 			children = (
+				14C92742201BDAA90016C129 /* MockTypes */,
 				14F27ABA2019272700601EF2 /* ManualMocks */,
 				14F27AB52019260400601EF2 /* Matchers */,
 				14F27AB22019254400601EF2 /* TestSpec.swift */,
-				14F27ACF201928BD00601EF2 /* Types.swift */,
 			);
 			path = SharedTests;
 			sourceTree = "<group>";
@@ -357,7 +368,6 @@
 			isa = PBXGroup;
 			children = (
 				14F27AFC2019308D00601EF2 /* EnvelopeNetworkRx */,
-				14F27AD820192CCC00601EF2 /* EnvelopeNetworkRx.h */,
 				14F27AD920192CCC00601EF2 /* Info.plist */,
 			);
 			path = EnvelopeNetworkRx;
@@ -445,7 +455,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14438D432016A6DD00307011 /* EnvelopeNetwork.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +462,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F27AE620192CCC00601EF2 /* EnvelopeNetworkRx.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,11 +845,13 @@
 				14F27ABC2019273500601EF2 /* NetworkingMock.swift in Sources */,
 				14F27ACB2019284200601EF2 /* NetworkingSpec.swift in Sources */,
 				14F27AB32019254400601EF2 /* TestSpec.swift in Sources */,
-				14F27AD0201928BD00601EF2 /* Types.swift in Sources */,
 				14F27AC5201927EB00601EF2 /* HttpBodyEncodingSpec.swift in Sources */,
+				14C92747201BDACC0016C129 /* HttpBinResponse.swift in Sources */,
+				14C92744201BDAB70016C129 /* SampleError.swift in Sources */,
 				14F27ABE2019275900601EF2 /* NetworkRequestingMock.swift in Sources */,
 				14F27AC92019282100601EF2 /* ResponseSerializationSpec.swift in Sources */,
 				14F27AB72019261700601EF2 /* resultMatchers.swift in Sources */,
+				14C9274A201BDAE30016C129 /* UnknownResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,6 +868,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C92745201BDAB70016C129 /* SampleError.swift in Sources */,
+				14C92748201BDACC0016C129 /* HttpBinResponse.swift in Sources */,
 				14F27B0C2019353B00601EF2 /* NetworkUploadRequestingMock.swift in Sources */,
 				14F27AEE20192DDB00601EF2 /* resultMatchers.swift in Sources */,
 				14F27AF620192E3B00601EF2 /* eventMatchersSpec.swift in Sources */,
@@ -867,8 +879,8 @@
 				14F27AFB2019306300601EF2 /* TestSpec+exampleDisposable.swift in Sources */,
 				14F27B0A2019353B00601EF2 /* NetworkingMock.swift in Sources */,
 				14F27AF020192DDB00601EF2 /* TestSpec.swift in Sources */,
-				14F27AF120192DDB00601EF2 /* Types.swift in Sources */,
 				14F27AF420192E2000601EF2 /* eventMatchers.swift in Sources */,
+				14C9274B201BDAE30016C129 /* UnknownResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
