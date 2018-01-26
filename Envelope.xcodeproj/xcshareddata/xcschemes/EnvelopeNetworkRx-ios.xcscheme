@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Envelope.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "14C9274F201BDBA90016C129"
+               BuildableName = "AllTests-ios.xctest"
+               BlueprintName = "AllTests-ios"
+               ReferencedContainer = "container:Envelope.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -34,9 +48,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14F27ADD20192CCC00601EF2"
-               BuildableName = "EnvelopeNetworkRx-ios-tests.xctest"
-               BlueprintName = "EnvelopeNetworkRx-ios-tests"
+               BlueprintIdentifier = "14C9274F201BDBA90016C129"
+               BuildableName = "AllTests-ios.xctest"
+               BlueprintName = "AllTests-ios"
                ReferencedContainer = "container:Envelope.xcodeproj">
             </BuildableReference>
          </TestableReference>
