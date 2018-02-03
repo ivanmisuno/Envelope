@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14C92777201BE1FF0016C129"
-               BuildableName = "EnvelopeTests.framework"
+               BuildableName = "EnvelopeTest.framework"
                BlueprintName = "EnvelopeTest-ios"
                ReferencedContainer = "container:Envelope.xcodeproj">
             </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14C92777201BE1FF0016C129"
-            BuildableName = "EnvelopeTests.framework"
+            BuildableName = "EnvelopeTest.framework"
             BlueprintName = "EnvelopeTest-ios"
             ReferencedContainer = "container:Envelope.xcodeproj">
          </BuildableReference>
@@ -81,7 +81,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14C92777201BE1FF0016C129"
-            BuildableName = "EnvelopeTests.framework"
+            BuildableName = "EnvelopeTest.framework"
             BlueprintName = "EnvelopeTest-ios"
             ReferencedContainer = "container:Envelope.xcodeproj">
          </BuildableReference>
@@ -99,7 +99,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14C92777201BE1FF0016C129"
-            BuildableName = "EnvelopeTests.framework"
+            BuildableName = "EnvelopeTest.framework"
             BlueprintName = "EnvelopeTest-ios"
             ReferencedContainer = "container:Envelope.xcodeproj">
          </BuildableReference>

@@ -8,12 +8,15 @@
 
 import Alamofire
 
-final class CodableSerializer<T: Decodable>: DataResponseSerializerProtocol {
+public final class CodableSerializer<T: Decodable>: DataResponseSerializerProtocol {
+
+    public init() {
+    }
 
     // MARK: - DataResponseSerializerProtocol
-    typealias SerializedObject = T
+    public typealias SerializedObject = T
 
-    var serializeResponse: (URLRequest?, HTTPURLResponse?, Data?, Error?) -> Result<SerializedObject> {
+    public var serializeResponse: (URLRequest?, HTTPURLResponse?, Data?, Error?) -> Result<SerializedObject> {
         return { (request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) -> Result<SerializedObject> in
             let result = Request.serializeResponseData(response: response, data: data, error: error)
             switch result {

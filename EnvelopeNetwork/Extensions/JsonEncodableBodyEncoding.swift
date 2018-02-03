@@ -8,14 +8,14 @@
 
 import Alamofire
 
-final class JsonEncodableBodyEncoding<T: Encodable>: ParameterEncoding {
+public final class JsonEncodableBodyEncoding<T: Encodable>: ParameterEncoding {
 
-    let jsonObject: T
-    let contentType: String
-    let defaultParametersEncoding: ParameterEncoding
-    let mapEncodingError: ((Error) -> Error)?
+    public let jsonObject: T
+    public let contentType: String
+    public let defaultParametersEncoding: ParameterEncoding
+    public let mapEncodingError: ((Error) -> Error)?
 
-    init(jsonObject: T,
+    public init(jsonObject: T,
          contentType: String = "application/json",
          defaultParametersEncoding: ParameterEncoding = URLEncoding.methodDependent,
          mapEncodingError: ((Error) -> Error)? = nil) {
@@ -27,7 +27,7 @@ final class JsonEncodableBodyEncoding<T: Encodable>: ParameterEncoding {
     }
 
     // MARK: - ParameterEncoding
-    func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
+    public func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
         var urlRequest = try urlRequest.asURLRequest()
 
         if let parameters = parameters {

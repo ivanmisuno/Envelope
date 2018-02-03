@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14438D4E2016A72500307011 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14438D4D2016A72500307011 /* Networking.swift */; };
+		14473118202652C9007AB998 /* RxNetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14473117202652C9007AB998 /* RxNetworkSpec.swift */; };
 		14C92755201BDBA90016C129 /* EnvelopeNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14438D322016A6DD00307011 /* EnvelopeNetwork.framework */; };
 		14C9275B201BDCC40016C129 /* CodableSerializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AC2201927D100601EF2 /* CodableSerializerSpec.swift */; };
 		14C9275C201BDCC40016C129 /* HttpBodyEncodingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27AC4201927EB00601EF2 /* HttpBodyEncodingSpec.swift */; };
@@ -104,6 +105,7 @@
 		14438D322016A6DD00307011 /* EnvelopeNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EnvelopeNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14438D362016A6DD00307011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14438D4D2016A72500307011 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		14473117202652C9007AB998 /* RxNetworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNetworkSpec.swift; sourceTree = "<group>"; };
 		14C92743201BDAB70016C129 /* SampleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleError.swift; sourceTree = "<group>"; };
 		14C92746201BDACC0016C129 /* HttpBinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBinResponse.swift; sourceTree = "<group>"; };
 		14C92749201BDAE30016C129 /* UnknownResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownResponse.swift; sourceTree = "<group>"; };
@@ -424,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				14F27AFF201930BF00601EF2 /* Networking+RxSpec.swift */,
+				14473117202652C9007AB998 /* RxNetworkSpec.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -849,6 +852,7 @@
 				14C9276C201BDE4E0016C129 /* resultMatchersSpec.swift in Sources */,
 				14C92760201BDCC40016C129 /* NetworkingSpec.swift in Sources */,
 				14C92771201BDE4E0016C129 /* eventMatchersSpec.swift in Sources */,
+				14473118202652C9007AB998 /* RxNetworkSpec.swift in Sources */,
 				14C92761201BDCC40016C129 /* Networking+RxSpec.swift in Sources */,
 				14C9275F201BDCC40016C129 /* AlamofireNetworkSpec.swift in Sources */,
 				14C9275B201BDCC40016C129 /* CodableSerializerSpec.swift in Sources */,

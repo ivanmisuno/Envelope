@@ -8,20 +8,20 @@
 
 import Alamofire
 
-final class HttpBodyEncoding: ParameterEncoding {
+public final class HttpBodyEncoding: ParameterEncoding {
 
-    let httpBody: Data
-    let contentType: String
-    let defaultParametersEncoding: ParameterEncoding
+    public let httpBody: Data
+    public let contentType: String
+    public let defaultParametersEncoding: ParameterEncoding
 
-    init(httpBody: Data, contentType: String = "application/octet-stream", defaultParametersEncoding: ParameterEncoding = URLEncoding.methodDependent) {
+    public init(httpBody: Data, contentType: String = "application/octet-stream", defaultParametersEncoding: ParameterEncoding = URLEncoding.methodDependent) {
         self.httpBody = httpBody
         self.contentType = contentType
         self.defaultParametersEncoding = defaultParametersEncoding
     }
 
     // MARK: - ParameterEncoding
-    func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
+    public func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
         var urlRequest = try urlRequest.asURLRequest()
 
         if let parameters = parameters {

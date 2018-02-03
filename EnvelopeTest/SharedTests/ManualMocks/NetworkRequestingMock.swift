@@ -66,7 +66,7 @@ public class NetworkRequestingMock<T: DataResponseSerializerProtocol>: NetworkRe
             return self
     }
     public var responseCallCount: Int = 0
-    public var responseHandler: ((_ queue: DispatchQueue, _ responseSerializer: T, _ completionHandler: (DataResponse<T.SerializedObject>) -> ()) -> ())? = nil
+    public var responseHandler: ((_ queue: DispatchQueue, _ responseSerializer: T, _ completionHandler: @escaping (DataResponse<T.SerializedObject>) -> ()) -> ())? = nil
     public var responseHandlerContextLocation: (file: StaticString, line: UInt)? = nil
 
     @discardableResult
