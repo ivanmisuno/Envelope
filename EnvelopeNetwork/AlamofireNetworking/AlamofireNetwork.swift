@@ -25,8 +25,8 @@ public final class AlamofireNetwork: Networking {
         headers: HTTPHeaders?)
         -> NetworkRequesting {
 
-            let alamofireRequest = alamofireSessionManager.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers)
-            return AlamofireNetworkRequest(alamofireRequest: alamofireRequest)
+        let alamofireRequest = alamofireSessionManager.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers)
+        return AlamofireNetworkRequest(alamofireRequest: alamofireRequest)
     }
 
     public func upload(
@@ -36,7 +36,7 @@ public final class AlamofireNetwork: Networking {
         headers: HTTPHeaders?)
         -> NetworkUploadRequesting {
 
-            let alamofireUploadRequest = alamofireSessionManager.upload(data, to: url, method: method, headers: headers)
-            return AlamofireNetworkUploadRequest(alamofireUploadRequest: alamofireUploadRequest)
+        let alamofireUploadRequest = alamofireSessionManager.upload(data, to: url, method: method, headers: headers)
+        return AlamofireNetworkUploadRequest(alamofireUploadRequest: alamofireUploadRequest)
     }
 }

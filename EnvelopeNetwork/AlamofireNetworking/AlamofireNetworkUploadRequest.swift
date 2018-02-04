@@ -24,8 +24,8 @@ public final class AlamofireNetworkUploadRequest: AlamofireNetworkRequest, Netwo
         closure: @escaping Request.ProgressHandler)
         -> Self {
 
-            alamofireUploadRequest.uploadProgress(queue: queue, closure: closure)
+        alamofireUploadRequest.uploadProgress(queue: queue, closure: closure)
 
-            return self
+        return self
     }
 }

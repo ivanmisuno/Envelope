@@ -33,4 +33,3 @@ public final class CodableSerializer<T: Decodable>: DataResponseSerializerProtoc
         }
     }
 }
-

@@ -31,9 +31,9 @@ public class AlamofireNetworkRequest: NetworkRequesting {
         progressHandler: @escaping Request.ProgressHandler)
         -> Self {
 
-            alamofireRequest.downloadProgress(queue: queue, closure: progressHandler)
+        alamofireRequest.downloadProgress(queue: queue, closure: progressHandler)
 
-            return self
+        return self
     }
 
     @discardableResult
@@ -43,19 +43,19 @@ public class AlamofireNetworkRequest: NetworkRequesting {
         completionHandler: @escaping (DataResponse<T.SerializedObject>) -> Void)
         -> Self {
 
-            alamofireRequest
-                .response(queue: queue, responseSerializer: responseSerializer, completionHandler: completionHandler)
-                .validate()
+        alamofireRequest
+            .response(queue: queue, responseSerializer: responseSerializer, completionHandler: completionHandler)
+            .validate()
 
-            return self
+        return self
     }
 
     @discardableResult
     public final func validate(validation: @escaping DataRequest.Validation)
         -> Self {
 
-            alamofireRequest.validate(validation)
+        alamofireRequest.validate(validation)
 
-            return self
+        return self
     }
 }
