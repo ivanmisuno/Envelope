@@ -35,7 +35,7 @@ public extension Networking {
         encoding: ParameterEncoding)
         -> NetworkRequesting {
 
-            return request(url, method: method, parameters: parameters, encoding: encoding, headers: nil)
+        return request(url, method: method, parameters: parameters, encoding: encoding, headers: nil)
     }
 
     func request(
@@ -44,7 +44,7 @@ public extension Networking {
         parameters: Parameters?)
         -> NetworkRequesting {
 
-            return request(url, method: method, parameters: parameters, encoding: URLEncoding.default, headers: nil)
+        return request(url, method: method, parameters: parameters, encoding: URLEncoding.default, headers: nil)
     }
 
     func request(
@@ -52,7 +52,7 @@ public extension Networking {
         method: HTTPMethod)
         -> NetworkRequesting {
 
-            return request(url, method: method, parameters: nil, encoding: URLEncoding.default, headers: nil)
+        return request(url, method: method, parameters: nil, encoding: URLEncoding.default, headers: nil)
     }
 
     func upload(
@@ -61,12 +61,22 @@ public extension Networking {
         method: HTTPMethod = .put)
         -> NetworkUploadRequesting {
 
-            return upload(data, to: url, method: method, headers: nil)
+        return upload(data, to: url, method: method, headers: nil)
     }
 
 }
 
 public extension Networking {
+    func get(
+        _ url: URLConvertible,
+        parameters: Parameters? = nil,
+        encoding: ParameterEncoding = URLEncoding.methodDependent,
+        headers: HTTPHeaders? = nil)
+        -> NetworkRequesting {
+
+        return request(url, method: .get, parameters: parameters, encoding: encoding, headers: headers)
+    }
+
     func post(
         _ url: URLConvertible,
         httpBody: Data,
@@ -76,7 +86,7 @@ public extension Networking {
         headers: HTTPHeaders? = nil)
         -> NetworkRequesting {
 
-            return request(url, method: .post, parameters: parameters, encoding: HttpBodyEncoding(httpBody: httpBody, contentType: contentType, defaultParametersEncoding: encoding), headers: headers)
+        return request(url, method: .post, parameters: parameters, encoding: HttpBodyEncoding(httpBody: httpBody, contentType: contentType, defaultParametersEncoding: encoding), headers: headers)
     }
 
     func post<T: Encodable>(
@@ -89,7 +99,7 @@ public extension Networking {
         mapEncodingError: ((Error) -> Error)? = nil)
         -> NetworkRequesting {
 
-            return request(url, method: .post, parameters: parameters, encoding: JsonEncodableBodyEncoding(jsonObject: jsonObject, contentType: contentType, defaultParametersEncoding: encoding, mapEncodingError: mapEncodingError), headers: headers)
+        return request(url, method: .post, parameters: parameters, encoding: JsonEncodableBodyEncoding(jsonObject: jsonObject, contentType: contentType, defaultParametersEncoding: encoding, mapEncodingError: mapEncodingError), headers: headers)
     }
 
     func put(
@@ -101,6 +111,6 @@ public extension Networking {
         headers: HTTPHeaders? = nil)
         -> NetworkRequesting {
 
-            return request(url, method: .put, parameters: parameters, encoding: HttpBodyEncoding(httpBody: httpBody, contentType: contentType, defaultParametersEncoding: encoding), headers: headers)
+        return request(url, method: .put, parameters: parameters, encoding: HttpBodyEncoding(httpBody: httpBody, contentType: contentType, defaultParametersEncoding: encoding), headers: headers)
     }
 }

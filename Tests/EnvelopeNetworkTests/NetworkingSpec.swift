@@ -104,6 +104,28 @@ class NetworkingSpec: TestSpec {
                 }
             } // describe("upload() overloads")
 
+            describe("get()") {
+                beforeEach {
+                    sut.requestHandler = { (url_: URLConvertible,
+                        method: HTTPMethod,
+                        parameters: Parameters?,
+                        encoding: ParameterEncoding,
+                        headers: HTTPHeaders?) -> NetworkRequesting in
+                        expect { try url_.asURL() } == url
+                        expect(method) == HTTPMethod.get
+                        expect(parameters?["a"] as? String) == "b"
+                        expect((encoding as? URLEncoding)?.destination) == URLEncoding.queryString.destination
+                        expect(headers?["a"]) == "b"
+                        return NetworkRequestingMock<DataResponseSerializer<Void>>()
+                    }
+
+                    _ = sut.get(url, parameters: ["a": "b"], encoding: URLEncoding.queryString, headers: ["a": "b"])
+                }
+                it("calls request()") {
+                    expect(sut.requestCallCount) == 1
+                }
+            } // describe("get()")
+
             describe("post() overloads") {
                 describe("post()") {
                     beforeEach {
