@@ -113,6 +113,7 @@
 		14C92754201BDBA90016C129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C92778201BE1FF0016C129 /* EnvelopeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EnvelopeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C9277B201BE1FF0016C129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14CA84C1204602D8001951E2 /* EnvelopeNetwork.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EnvelopeNetwork.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		14F27A9C2019167800601EF2 /* NetworkRequesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequesting.swift; sourceTree = "<group>"; };
 		14F27A9E2019169500601EF2 /* NetworkUploadRequesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUploadRequesting.swift; sourceTree = "<group>"; };
 		14F27AA22019170400601EF2 /* HttpBodyEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBodyEncoding.swift; sourceTree = "<group>"; };
@@ -217,6 +218,7 @@
 		14438D282016A6DD00307011 = {
 			isa = PBXGroup;
 			children = (
+				14CA84C1204602D8001951E2 /* EnvelopeNetwork.playground */,
 				14438D342016A6DD00307011 /* EnvelopeNetwork */,
 				14F27AD720192CCC00601EF2 /* EnvelopeNetworkRx */,
 				14C92779201BE1FF0016C129 /* EnvelopeTest */,
