@@ -135,7 +135,8 @@ public final class RxNetwork: RxNetworking {
 
 }
 
-// : ReactiveCompatible
+// NB: It's impossible to extend a protocol by specifying conformance to another protocol.
+//     Provide similar extension methods to `ReactiveCompatible`.
 extension Networking {
 
     /// Reactive extensions.
@@ -171,7 +172,7 @@ public extension Reactive where Base: RxNetworking {
         headers: HTTPHeaders? = nil)
         -> RxNetworkRequesting {
 
-            return base.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers)
+        return base.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers)
     }
 
     /// `rx.upload()`
@@ -182,7 +183,7 @@ public extension Reactive where Base: RxNetworking {
         headers: HTTPHeaders? = nil)
         -> RxNetworkUploadRequesting {
 
-            return base.upload(data, to: url, method: method, headers: headers)
+        return base.upload(data, to: url, method: method, headers: headers)
     }
 
 }
