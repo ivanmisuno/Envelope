@@ -29,7 +29,7 @@ abstract_target 'Envelope_Framework' do
     pod 'RxSwift'
   end
 
-  target 'EnvelopeTests-ios' do
+  target 'EnvelopeTest-ios' do
     platform :ios, '8.0'
     use_frameworks!
     inhibit_all_warnings!

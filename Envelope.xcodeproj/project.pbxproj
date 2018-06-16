@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0431440B53C86A63A800A605 /* Pods_AllTests_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF6B04B60C6304B63B4ED3E /* Pods_AllTests_ios.framework */; };
 		14438D4E2016A72500307011 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14438D4D2016A72500307011 /* Networking.swift */; };
 		14473118202652C9007AB998 /* RxNetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14473117202652C9007AB998 /* RxNetworkSpec.swift */; };
 		14C92755201BDBA90016C129 /* EnvelopeNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14438D322016A6DD00307011 /* EnvelopeNetwork.framework */; };
@@ -46,12 +47,9 @@
 		14F27B042019312600601EF2 /* RxProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27B032019312600601EF2 /* RxProgress.swift */; };
 		14F27B062019319C00601EF2 /* CodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F27B052019319C00601EF2 /* CodableSerializer.swift */; };
 		14F27B092019336600601EF2 /* EnvelopeNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14438D322016A6DD00307011 /* EnvelopeNetwork.framework */; };
-		3AE1BA6941A14241373272D8 /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20989DA3E26CB5D47B5A61DA /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework */; };
-		505B4BB2E7F45C7EDAD417D4 /* Pods_AllTests_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF6B04B60C6304B63B4ED3E /* Pods_AllTests_ios.framework */; };
-		8C48EA446F730E007DFC7641 /* Pods_Envelope_Framework_AllTests_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58EC70E52AAC752303F9DA8 /* Pods_Envelope_Framework_AllTests_ios.framework */; };
-		96871043AA22F2D6B2D76B8C /* Pods_Envelope_Framework_Envelope_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5734AEDF4CB29514A3EB9D85 /* Pods_Envelope_Framework_Envelope_ios.framework */; };
-		DCEF4F557EA640D21B596CB0 /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413A6FD48466E37BC3AC164B /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework */; };
-		FA554C679E04A7374E515EFF /* Pods_Envelope_Framework_EnvelopeTests_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35395B966D3FAE035F677395 /* Pods_Envelope_Framework_EnvelopeTests_ios.framework */; };
+		30868D3AFFBCD7C041850A56 /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413A6FD48466E37BC3AC164B /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework */; };
+		BA16D5947DC1951C1DBDA65E /* Pods_Envelope_Framework_EnvelopeTest_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A541B7C05BB2EED924DDAB14 /* Pods_Envelope_Framework_EnvelopeTest_ios.framework */; };
+		E112DE1FA3A07D2E8A726951 /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20989DA3E26CB5D47B5A61DA /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,15 +155,18 @@
 		85E377B39878ED8F6072D019 /* Pods-EnvelopeNetworkRx-ios-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvelopeNetworkRx-ios-tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnvelopeNetworkRx-ios-tests/Pods-EnvelopeNetworkRx-ios-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		86ED1E7E6BF7592581C84DB0 /* Pods-Envelope_Framework-AllTests-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-AllTests-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-AllTests-ios/Pods-Envelope_Framework-AllTests-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A36AC67584543B7FD94992C5 /* Pods-Envelope_Framework-Envelope-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-Envelope-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-Envelope-ios/Pods-Envelope_Framework-Envelope-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		A541B7C05BB2EED924DDAB14 /* Pods_Envelope_Framework_EnvelopeTest_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Envelope_Framework_EnvelopeTest_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB171EF1E17E2152275881B2 /* Pods_EnvelopeNetwork_ios_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnvelopeNetwork_ios_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8C5CD3BEDE7446D3016D01 /* Pods-Envelope-ios-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope-ios-tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope-ios-tests/Pods-Envelope-ios-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE6165B4E0C185F8D554D44E /* Pods-Envelope_Framework-EnvelopeTests-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeTests-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeTests-ios/Pods-Envelope_Framework-EnvelopeTests-ios.release.xcconfig"; sourceTree = "<group>"; };
 		B28E4615555847531B49BA44 /* Pods-Envelope_Framework-EnvelopeNetwork-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeNetwork-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeNetwork-ios/Pods-Envelope_Framework-EnvelopeNetwork-ios.release.xcconfig"; sourceTree = "<group>"; };
+		C65443D93F60E5BFB9A01AC2 /* Pods-Envelope_Framework-EnvelopeTest-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeTest-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeTest-ios/Pods-Envelope_Framework-EnvelopeTest-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		D58EC70E52AAC752303F9DA8 /* Pods_Envelope_Framework_AllTests_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Envelope_Framework_AllTests_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D855D5D668753E6F6C6535F4 /* Pods-AllTests-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllTests-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllTests-ios/Pods-AllTests-ios.release.xcconfig"; sourceTree = "<group>"; };
 		DAC536AC4C9687E87923E445 /* Pods-Envelope_Framework-EnvelopeTests-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeTests-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeTests-ios/Pods-Envelope_Framework-EnvelopeTests-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		E895ACA4E548E3DF37BF6D8A /* Pods-Envelope_Framework-Envelope-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-Envelope-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-Envelope-ios/Pods-Envelope_Framework-Envelope-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F04BDF826A2AD71015EB1BB8 /* Pods-EnvelopeNetworkRx-ios-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvelopeNetworkRx-ios-tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnvelopeNetworkRx-ios-tests/Pods-EnvelopeNetworkRx-ios-tests.release.xcconfig"; sourceTree = "<group>"; };
+		F36704D0E34660F1721BE2DB /* Pods-Envelope_Framework-EnvelopeTest-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeTest-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeTest-ios/Pods-Envelope_Framework-EnvelopeTest-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F3851648257DBFA6A0F2CC6A /* Pods-Envelope-ios-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope-ios-tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope-ios-tests/Pods-Envelope-ios-tests.release.xcconfig"; sourceTree = "<group>"; };
 		F48B1B2C847D77A382987938 /* Pods-Envelope_Framework-EnvelopeNetworkRx-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Envelope_Framework-EnvelopeNetworkRx-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeNetworkRx-ios/Pods-Envelope_Framework-EnvelopeNetworkRx-ios.release.xcconfig"; sourceTree = "<group>"; };
 		FE15E01B84C08EEA453AD357 /* Pods_Envelope_ios_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Envelope_ios_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,8 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96871043AA22F2D6B2D76B8C /* Pods_Envelope_Framework_Envelope_ios.framework in Frameworks */,
-				DCEF4F557EA640D21B596CB0 /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework in Frameworks */,
+				30868D3AFFBCD7C041850A56 /* Pods_Envelope_Framework_EnvelopeNetwork_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +188,7 @@
 				14C9278D201BE35F0016C129 /* EnvelopeTest.framework in Frameworks */,
 				14C92764201BDCD70016C129 /* EnvelopeNetworkRx.framework in Frameworks */,
 				14C92755201BDBA90016C129 /* EnvelopeNetwork.framework in Frameworks */,
-				8C48EA446F730E007DFC7641 /* Pods_Envelope_Framework_AllTests_ios.framework in Frameworks */,
-				505B4BB2E7F45C7EDAD417D4 /* Pods_AllTests_ios.framework in Frameworks */,
+				0431440B53C86A63A800A605 /* Pods_AllTests_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +198,7 @@
 			files = (
 				14C92792201BE3F30016C129 /* EnvelopeNetwork.framework in Frameworks */,
 				14C92793201BE3F30016C129 /* EnvelopeNetworkRx.framework in Frameworks */,
-				FA554C679E04A7374E515EFF /* Pods_Envelope_Framework_EnvelopeTests_ios.framework in Frameworks */,
+				BA16D5947DC1951C1DBDA65E /* Pods_Envelope_Framework_EnvelopeTest_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F27B092019336600601EF2 /* EnvelopeNetwork.framework in Frameworks */,
-				3AE1BA6941A14241373272D8 /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework in Frameworks */,
+				E112DE1FA3A07D2E8A726951 /* Pods_Envelope_Framework_EnvelopeNetworkRx_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +444,7 @@
 				D58EC70E52AAC752303F9DA8 /* Pods_Envelope_Framework_AllTests_ios.framework */,
 				35395B966D3FAE035F677395 /* Pods_Envelope_Framework_EnvelopeTests_ios.framework */,
 				3AF6B04B60C6304B63B4ED3E /* Pods_AllTests_ios.framework */,
+				A541B7C05BB2EED924DDAB14 /* Pods_Envelope_Framework_EnvelopeTest_ios.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -470,6 +470,8 @@
 				AE6165B4E0C185F8D554D44E /* Pods-Envelope_Framework-EnvelopeTests-ios.release.xcconfig */,
 				11D8A0A2FD924D760E3E242C /* Pods-AllTests-ios.debug.xcconfig */,
 				D855D5D668753E6F6C6535F4 /* Pods-AllTests-ios.release.xcconfig */,
+				C65443D93F60E5BFB9A01AC2 /* Pods-Envelope_Framework-EnvelopeTest-ios.debug.xcconfig */,
+				F36704D0E34660F1721BE2DB /* Pods-Envelope_Framework-EnvelopeTest-ios.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -750,7 +752,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeTests-ios/Pods-Envelope_Framework-EnvelopeTests-ios-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Envelope_Framework-EnvelopeTest-ios/Pods-Envelope_Framework-EnvelopeTest-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE4A1DA40743CC133AE89FA3 /* [CP] Copy Pods Resources */ = {
@@ -820,7 +822,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Envelope_Framework-EnvelopeTests-ios-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Envelope_Framework-EnvelopeTest-ios-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1115,7 +1117,7 @@
 		};
 		14C9277D201BE1FF0016C129 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAC536AC4C9687E87923E445 /* Pods-Envelope_Framework-EnvelopeTests-ios.debug.xcconfig */;
+			baseConfigurationReference = C65443D93F60E5BFB9A01AC2 /* Pods-Envelope_Framework-EnvelopeTest-ios.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1136,7 +1138,7 @@
 		};
 		14C9277E201BE1FF0016C129 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE6165B4E0C185F8D554D44E /* Pods-Envelope_Framework-EnvelopeTests-ios.release.xcconfig */;
+			baseConfigurationReference = F36704D0E34660F1721BE2DB /* Pods-Envelope_Framework-EnvelopeTest-ios.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
