@@ -2,6 +2,8 @@
 
 # Envelope: A Modern Swift 4 Protocol-Based API Abstraction Layers Of Common Frameworks That Make Unit-Testing A First-Class Citizen.
 
+Read the blog post introducing `EnvelopeNetwork` on (Dev.to)[https://dev.to/ivanmisuno/envelopenetwork-or-how-to-abstract-alamofire-and-provide-strongly-typed-mock-responses-in-unit-tests--rxswift-bindings-22m2].
+
 ## EnvelopeNetwork
 
 A network abstraction layer modelled after Alamofire, that provides the ability to write an isolated networking code, and provide strongly-typed mock responses in unit-tests.
